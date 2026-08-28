@@ -18,17 +18,21 @@ exist. The skill also assumes a `web_search` tool for the routing rules.
 ## Install
 
 ```
-pi install git:github.com/botkrabs/pi-local-wiki@v0.1.0   # pinned
+pi install git:github.com/botkrabs/pi-local-wiki@v0.1.1   # pinned
 pi install git:github.com/botkrabs/pi-local-wiki          # track main
 ```
+
+v0.1.1 (2026-08-28): the skill gains Chinese Wikipedia routing
+(`lang="zh"` on both tools, per-gram merge behavior, transliteration/variant
+spelling follow-up, zh-topic pattern).
 
 ## What you get
 
 **`local-search` skill** — the routing policy between `local_wiki` and
 `web_search`: title-first `get`, phrase `search` as title-finder, surgical
-fetches (lead / `section=` before `full=`), existence checks, recency
-fallback, and the anti-hallucination guardrails (facts are "as of the ZIM
-snapshot").
+fetches (lead / `section=` before `full=`), Chinese Wikipedia routing
+(`lang="zh"`), existence checks, recency fallback, and the
+anti-hallucination guardrails (facts are "as of the ZIM snapshot").
 
 ## Development
 

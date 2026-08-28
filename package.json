@@ -1,6 +1,6 @@
 {
   "name": "pi-local-wiki",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "pi-side companion for the local_wiki offline-Wikipedia MCP server: the local-search routing skill",
   "keywords": [
     "pi-package"
