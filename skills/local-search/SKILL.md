@@ -6,7 +6,7 @@ description: Use when searching, looking up facts, or fact-checking world knowle
 # Local Search
 
 Two local sources; route by question type (patterns below):
-- `local_wiki_get(title, section=..., full=..., lang=...)` — offline Wikipedia ZIM, ~35 ms, frozen at the ZIM's download date (stated in the local_wiki README)
+- `local_wiki_get(title, section=..., full=..., lang=...)` — offline Wikipedia ZIM, ~35 ms, frozen at the ZIM snapshot (dates: `pi-learning/memory.md` → local_wiki line)
 - `local_wiki_search(query, lang=...)` — phrase search over article text; ranked titles + snippets, no exact title needed
 - `lang="zh"` (either tool) → Chinese Wikipedia ZIM (same API, full zh text + FTS). Useful for zh entities, cross-checking, and Chinese-language sources; first zh query is slow (cold 13.7 GB index over 9p), repeats are fast.
 - `web_search` — local SearXNG; the only source with recency
